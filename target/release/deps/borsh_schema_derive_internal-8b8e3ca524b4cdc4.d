@@ -1,0 +1,10 @@
+/home/joe/work/launchpad-contract/target/release/deps/libborsh_schema_derive_internal-8b8e3ca524b4cdc4.rmeta: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/helpers.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/enum_schema.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/struct_schema.rs
+
+/home/joe/work/launchpad-contract/target/release/deps/libborsh_schema_derive_internal-8b8e3ca524b4cdc4.rlib: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/helpers.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/enum_schema.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/struct_schema.rs
+
+/home/joe/work/launchpad-contract/target/release/deps/borsh_schema_derive_internal-8b8e3ca524b4cdc4.d: /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/lib.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/helpers.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/enum_schema.rs /root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/struct_schema.rs
+
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/lib.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/helpers.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/enum_schema.rs:
+/root/.cargo/registry/src/index.crates.io-6f17d22bba15001f/borsh-schema-derive-internal-0.10.3/src/struct_schema.rs:

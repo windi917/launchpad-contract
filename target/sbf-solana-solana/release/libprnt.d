@@ -1,0 +1,1 @@
+/home/joe/work/launchpad-contract/target/sbf-solana-solana/release/libprnt.rlib: /home/joe/work/launchpad-contract/programs/solucky/src/lib.rs /home/joe/work/launchpad-contract/programs/solucky/src/utils.rs
