@@ -1,12 +1,12 @@
 use anchor_lang::prelude::*;
-use solana_program::program::{invoke, invoke_signed};
+use solana_program::program::{invoke};
 
 // transfer sol
 pub fn sol_transfer_with_signer<'a>(
     source: AccountInfo<'a>,
     destination: AccountInfo<'a>,
-    system_program: AccountInfo<'a>,
-    signers: &[&[&[u8]]; 1],
+    _system_program: AccountInfo<'a>,
+    _signers: &[&[&[u8]]; 1],
     amount: u64,
 ) -> Result<()> {
     // msg!("sol transfer signer.---1");

@@ -12,7 +12,13 @@ use utils::*;
 pub const GLOBAL_AUTHORITY_SEED: &str = "global-authority";
 pub const ADMIN_WALLET: &str = "ArZrqyPdd8YsBD67anP1fzbuwTCUfGCkofDutQYXp5Kc";
 
-declare_id!("DuYWUDbqA2fwExk7jf6qYXQTndTvUcfwFjdfnFczK39i");
+// Define the list of admin addresses
+pub const ADMIN_LIST: [&str; 2] = [
+    "ArZrqyPdd8YsBD67anP1fzbuwTCUfGCkofDutQYXp5Kc",
+    "3BWcH5wSKXkydJg3giuLesrqkSSgw4jDo16wEWnhoS65",
+];
+
+declare_id!("HjxwAMPfrWLYr7XF2hSUHUEXu8KnFSRwHYrFu4T9f9XB");
 
 #[program]
 pub mod presale_contract {
@@ -247,7 +253,6 @@ pub mod presale_contract {
             )?;
         }
 
-        presale.total_contributions = 0;
         presale.state = 2;
         Ok(())
     }
@@ -255,12 +260,16 @@ pub mod presale_contract {
     pub fn set_approve(
         ctx: Context<SetApprove>, 
     ) -> Result<()> {
-        // let timestamp = Clock::get()?.unix_timestamp;
+        let timestamp = Clock::get()?.unix_timestamp;
         let mut presale = ctx.accounts.presale.load_mut()?;
 
-        // if timestamp < presale.end_time {
-        //     return Err(ErrorCode::PresaleNotEnded.into());
+        // if !ADMIN_LIST.contains(&user_address.as_str()) {
+        //     return Err(ErrorCode::Unauthorized.into());
         // }
+
+        if timestamp < presale.end_time {
+            return Err(ErrorCode::PresaleNotEnded.into());
+        }
 
         presale.state = 1;
 
@@ -480,4 +489,6 @@ pub enum ErrorCode {
     Withdrawed,
     #[msg("Presale is not avaliable now.")]
     NotAvaliable,
+    #[msg("You do not have admin role.")]
+    Unauthorized,
 }

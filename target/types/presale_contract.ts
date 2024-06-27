@@ -398,6 +398,11 @@ export type PresaleContract = {
       "code": 6007,
       "name": "NotAvaliable",
       "msg": "Presale is not avaliable now."
+    },
+    {
+      "code": 6008,
+      "name": "Unauthorized",
+      "msg": "You do not have admin role."
     }
   ]
 };
@@ -802,6 +807,11 @@ export const IDL: PresaleContract = {
       "code": 6007,
       "name": "NotAvaliable",
       "msg": "Presale is not avaliable now."
+    },
+    {
+      "code": 6008,
+      "name": "Unauthorized",
+      "msg": "You do not have admin role."
     }
   ]
 };

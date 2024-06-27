@@ -6,7 +6,7 @@ seeds = false
 skip-lint = false
 
 [programs.devnet]
-prnt = "DuYWUDbqA2fwExk7jf6qYXQTndTvUcfwFjdfnFczK39i"
+prnt = "HjxwAMPfrWLYr7XF2hSUHUEXu8KnFSRwHYrFu4T9f9XB"
 
 [registry]
 url = "https://api.apr.dev"
