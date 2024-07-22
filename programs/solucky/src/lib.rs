@@ -10,15 +10,9 @@ pub mod utils;
 use utils::*;
 
 pub const GLOBAL_AUTHORITY_SEED: &str = "global-authority";
-pub const ADMIN_WALLET: &str = "ArZrqyPdd8YsBD67anP1fzbuwTCUfGCkofDutQYXp5Kc";
+pub const ADMIN_WALLET: &str = "PrNTuQKjKMJ1WJruQdCYHxKfFiemABQHj6FEQEAWiyr";
 
-// Define the list of admin addresses
-pub const ADMIN_LIST: [&str; 2] = [
-    "ArZrqyPdd8YsBD67anP1fzbuwTCUfGCkofDutQYXp5Kc",
-    "3BWcH5wSKXkydJg3giuLesrqkSSgw4jDo16wEWnhoS65",
-];
-
-declare_id!("HjxwAMPfrWLYr7XF2hSUHUEXu8KnFSRwHYrFu4T9f9XB");
+declare_id!("9Keg5CgCSSudKKuXJcEMvyksGLbbqgrtaYjoM18uyaGQ");
 
 #[program]
 pub mod presale_contract {
@@ -181,8 +175,8 @@ pub mod presale_contract {
         let signer = &[&seeds[..]];
 
         let base_amount = (presale.max_contribution) - presale.total_contributions / presale.sale_price;
-        let quote_amount = presale.total_contributions * 75 / 100;
-        let fee_amount = presale.total_contributions * 24 / 100;
+        let quote_amount = presale.total_contributions * 974 / 1000;
+        let fee_amount = presale.total_contributions * 25 / 1000;
 
         msg!("Native---(QUOTE-BASE).---base amount {}", 10u64.pow(base_decimals as u32) * base_amount);
         //////////////////////////send base to user from global
@@ -262,10 +256,6 @@ pub mod presale_contract {
     ) -> Result<()> {
         let timestamp = Clock::get()?.unix_timestamp;
         let mut presale = ctx.accounts.presale.load_mut()?;
-
-        // if !ADMIN_LIST.contains(&user_address.as_str()) {
-        //     return Err(ErrorCode::Unauthorized.into());
-        // }
 
         if timestamp < presale.end_time {
             return Err(ErrorCode::PresaleNotEnded.into());

@@ -6,13 +6,16 @@ seeds = false
 skip-lint = false
 
 [programs.devnet]
-prnt = "HjxwAMPfrWLYr7XF2hSUHUEXu8KnFSRwHYrFu4T9f9XB"
+prnt = "9Keg5CgCSSudKKuXJcEMvyksGLbbqgrtaYjoM18uyaGQ"
+
+[programs.mainnet]
+prnt = "9Keg5CgCSSudKKuXJcEMvyksGLbbqgrtaYjoM18uyaGQ"
 
 [registry]
-url = "https://api.apr.dev"
+url = "https://mainnet.helius-rpc.com/?api-key=f1d5fa66-a4cd-4cb6-a0c3-49c3500e7c0f"
 
 [provider]
-cluster = "Devnet"
+cluster = "mainnet"
 wallet = "/root/.config/solana/id.json"
 
 [scripts]
